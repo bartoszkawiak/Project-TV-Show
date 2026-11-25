@@ -1,3 +1,55 @@
 #root {
-  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 1.1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background-color: rgba(214, 200, 180, 1);
+}
+.film-card h3 {
+  border: 2px solid rgba(165, 139, 112, 1);
+  border-radius: 20px;
+  background-color: rgba(92, 64, 51, 1);
+  color: rgba(245, 230, 200, 1);
+  text-align: center;
+  padding: 15px;
+}
+.film-card {
+  text-align: center;
+  border: 1px solid rgba(165, 139, 112, 1);
+  border-radius: 20px;
+  padding: 30px 15px;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  background-color: rgba(245, 239, 230, 1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.film-card img {
+  border: 2px solid rgba(165, 139, 112, 1);
+  border-radius: 45px;
+  display: inline-block;
+  width: 90%;
+  margin: 20px auto;
+  transition: transform 0.3s ease;
+}
+
+.film-card img:hover {
+  box-shadow: 10px 10px 5px rgba(56, 44, 36, 0.6);
+  transform: scale(1.1);
+}
+
+.summary {
+  padding: 0px 20px;
+  margin: auto;
+  line-height: 1.5;
+  text-align: left;
+  color: rgba(56, 44, 36, 1);
+}
+
+.film-card:hover {
+  transform: scale(1.1);
 }
